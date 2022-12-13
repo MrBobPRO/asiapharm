@@ -1,0 +1,131 @@
+
+/* ------------ Main styles ------------ */
+:root {
+  --main-color: #009CA3;
+  --secondary-color: #FAB942;
+  --text-color: #4D4D4D;
+}
+
+body {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: #EFF5FF;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+picture {
+  display: flex;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.main-container {
+  max-width: 1220px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-title {
+  font-size: 22px;
+}
+
+.main-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-box__icon-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.main-box__icon {
+  width: 22px;
+}
+
+.main-box__desc {
+  color: var(--text-color);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.button {
+  padding: 12px 32px;
+  color: white;
+  border: none;
+  border-radius: 72px;
+}
+
+.button--main {
+  background-color: var(--main-color);
+}
+
+.logo {
+  display: flex;
+}
+/* ------------ /end Main styles ------------ */
+
+
+/* ------------ Header ------------ */
+.header__inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+/* ------------ /end Header ------------ */
+
+
+/* ------------ Main Banner ------------ */
+.banner__inner {
+  background-image: url('img/banner.jpg');
+}
+.banner__txt-container {
+}
+.banner__title {
+}
+.banner__desc {
+}
+/* ------------ /end Banner ------------ */
