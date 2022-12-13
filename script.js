@@ -1,4 +1,4 @@
-// --------------Google Maps start----------------
+// Google Maps
 let map = document.getElementById("map");
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -31,4 +31,15 @@ function toggleBounce() {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
-// --------------Google Maps end----------------
+
+
+// Smooth scroll on anchor click
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
