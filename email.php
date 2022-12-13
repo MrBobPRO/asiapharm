@@ -12,4 +12,7 @@ if ($name && $phone) {
     'X-Mailer: PHP/' . phpversion();
 
   mail($to, $subject, $message, $headers);
+
+  header("Location: http://asiapharm.tj/");
+  die();
 }
