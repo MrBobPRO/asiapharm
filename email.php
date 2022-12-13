@@ -11,8 +11,11 @@ if ($name && $phone) {
     'Reply-To: test@demo.asiapharm.tj' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-  mail($to, $subject, $message, $headers);
+  if(mail($to, $subject, $message, $headers)) {
+    header("Location: http://asiapharm.tj/");
+    die();
+  } else {
+    echo "Сервис временно не работает!";
+  }
 
-  header("Location: http://asiapharm.tj/");
-  die();
 }
