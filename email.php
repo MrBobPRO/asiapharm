@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 
 if ($name && $phone) {
-  $to = 'boburjon_n@mail.ru';
+  $to = 'info@asiapharma.tj';
   $subject = 'Новое сообщение из сайта asiapharm.tj';
   $message = "Новый запрос о бесплатной консультации. Имя: $name. Телефон: $phone";
 
