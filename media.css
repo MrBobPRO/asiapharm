@@ -70,6 +70,10 @@
     margin-bottom: 20px;
   }
 
+  .task__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
   .task-card__header {
     padding: 32px;
   }
@@ -91,6 +95,10 @@
     margin-bottom: 20px;
   }
 
+  .advantages__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
   .advantages-card {
     padding: 24px 32px;
   }
@@ -101,6 +109,10 @@
 
   .partners__desc {
     margin-bottom: 20px;
+  }
+
+  .partners__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 
   .partners-card {
@@ -150,9 +162,5 @@
     width: 100%;
     font-size: 15px;
     padding: 13px 20px;
-  }
-
-  .footer {
-    
   }
 }
