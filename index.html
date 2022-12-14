@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Азия Фарм</title>
 
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -41,11 +44,11 @@
             г. Бустон, проспект Сомониён
           </a>
         </div>
-
-        <a class="button button--main header__phone-button" href="#consultation">
-          <img class="header__phone-icon" src="img/phone.svg" alt="phone">
-        </a>
       </div>
+
+      <a class="button button--main header__phone-button" href="#consultation">
+        <img class="header__phone-icon" src="img/phone.svg" alt="phone">
+      </a>
     </div>
   </header>
   <!-- Header end -->
@@ -307,8 +310,8 @@
 
       <form class="consultation-form" action="email.php" method="POST">
         <div class="form__inputs">
-          <input class="input" type="text" name="name" placeholder="Ваше имя">
-          <input class="input" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="input" type="text" name="phone" placeholder="Ваш телефон" required>
 
           <button class="consultation-form__submit">
             <img class="consultation-form__submit-image" src="img/phone.svg" alt="phone">
@@ -329,11 +332,13 @@
   </section>
   <!-- Consultation end -->
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="main-container footer__inner">
       <p class="footer__txt">© 2022 ООО «Азия Фарм»<br> Все права защищены.</p>
     </div>
   </footer>
+  <!-- Footer end -->
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAneCOkP0fjY3gOXV9DYFTdA59yWXDvNLw&callback=initMap" async defer></script>
   <script src="script.js"></script>
